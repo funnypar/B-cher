@@ -1,0 +1,29 @@
+.app-container {
+    margin: 8rem auto;
+    max-width: 120rem;
+    background-color: var(--color-Grey-ligh-2);
+    box-shadow: 0 6rem 6rem rgba(black, 0.4);
+    border-radius: var(--radius);
+
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    min-height: 8vh;
+}
+
+.nav-main-container {
+    display: flex;
+}
+
+.navigation {
+    background-color: var(--color-Grey-dark-1);
+    flex: 0 0 18%;
+    height: 100%;
+}
+
+.main {
+    background-color: var(--color-White);
+    flex: 1;
+}
