@@ -15,7 +15,51 @@
     </head>
     <body>
         <div class="app-container">
-            <header class="header">header</header>
+            <header class="header">
+                <img src="./img/logo.png" alt="logo" class="header__logo" />
+                <form action="#" class="search-form">
+                    <input
+                        type="text"
+                        class="search-form__input"
+                        placeholder="Search for books"
+                    />
+                    <button class="search-form__btn">
+                        <svg class="icon">
+                            <use
+                                xlink:href="./img/sprites.svg#icon-magnifying-glass"
+                            ></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="header__box">
+                    <div class="header__box__item">
+                        <svg class="icon">
+                            <use
+                                xlink:href="./img/sprites.svg#icon-bookmark"
+                            ></use>
+                        </svg>
+                        <span class="header__box__alert"
+                            ><span class="header__box__alert__number"
+                                >7</span
+                            ></span
+                        >
+                    </div>
+                    <div class="header__box__item">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprites.svg#icon-chat"></use>
+                        </svg>
+                        <span class="header__box__alert"
+                            ><span class="header__box__alert__number"
+                                >13</span
+                            ></span
+                        >
+                    </div>
+                    <div class="header__box__user">
+                        <img src="./img/user.jpg" alt="user" class="user" />
+                        <span class="header__box__user__name">mopano</span>
+                    </div>
+                </div>
+            </header>
             <div class="nav-main-container">
                 <nav class="navigation">nav</nav>
                 <main class="main">main</main>

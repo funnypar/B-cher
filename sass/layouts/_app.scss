@@ -1,9 +1,10 @@
 .app-container {
     margin: 8rem auto;
     max-width: 120rem;
-    background-color: var(--color-Grey-ligh-2);
+    background-color: var(--color-Grey-light-2);
     box-shadow: 0 6rem 6rem rgba(black, 0.4);
     border-radius: var(--radius);
+    overflow: hidden;
 
     min-height: 100vh;
 }

@@ -1,9 +1,11 @@
 @import "abstracts/functions";
 @import "abstracts/mixins";
 
-@import "layouts/app";
-
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
 @import "base/utilities";
+
+@import "layouts/app";
+
+@import "components/header";
