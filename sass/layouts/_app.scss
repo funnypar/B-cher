@@ -19,9 +19,12 @@
 }
 
 .navigation {
-    background-color: var(--color-Grey-dark-1);
+    background: var(--color-Grey-dark-1);
     flex: 0 0 18%;
-    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    height: 100vh;
 }
 
 .main {

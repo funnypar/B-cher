@@ -49,9 +49,12 @@ body {
   display: flex; }
 
 .navigation {
-  background-color: var(--color-Grey-dark-1);
+  background: var(--color-Grey-dark-1);
   flex: 0 0 18%;
-  height: 100%; }
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  height: 100vh; }
 
 .main {
   background-color: var(--color-White);
@@ -142,3 +145,32 @@ body {
   height: 4.25rem;
   width: 4.25rem;
   border-radius: 50%; }
+
+.navigation__links {
+  display: flex;
+  flex-direction: column; }
+
+.navigation__link {
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .navigation__link:first-child {
+    padding-top: 2rem; }
+  .navigation__link__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-left: 2rem;
+    fill: var(--color-White); }
+  .navigation__link__text {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--color-White);
+    padding: 2rem 3rem; }
+
+.copyRight {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-White);
+  padding: 2rem 1rem; }

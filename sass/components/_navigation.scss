@@ -1,0 +1,34 @@
+.navigation__links {
+    display: flex;
+    flex-direction: column;
+}
+.navigation__link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:first-child {
+        padding-top: 2rem;
+    }
+
+    &__icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-left: 2rem;
+        fill: var(--color-White);
+    }
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: var(--color-White);
+        padding: 2rem 3rem;
+    }
+}
+.copyRight {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-White);
+    padding: 2rem 1rem;
+}
