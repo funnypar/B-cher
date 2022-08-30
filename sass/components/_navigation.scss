@@ -6,11 +6,37 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    transition: all 1s;
+    z-index: 1;
 
-    &:first-child {
-        padding-top: 2rem;
+    &:not(last-child) {
+        margin-bottom: 1rem;
     }
 
+    &:first-child {
+        margin-top: 2rem;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0.5rem;
+        height: 100%;
+        border-radius: 0 2rem 2rem 0;
+        background: var(--color-Primary);
+        transform: scaleY(0);
+        transition: transform 0.3s, width cubic-bezier(0, 0, 0, 1) 0.4s 0.3s;
+        z-index: -1;
+    }
+    &:hover::before {
+        transform: scaleY(1);
+        width: 100%;
+        border-radius: 0;
+    }
+
+    &__active {
+        background: var(--color-Primary);
+    }
     &__icon {
         width: 2.25rem;
         height: 2.25rem;

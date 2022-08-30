@@ -153,9 +153,30 @@ body {
 .navigation__link {
   display: flex;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  transition: all 1s;
+  z-index: 1; }
+  .navigation__link:not(last-child) {
+    margin-bottom: 1rem; }
   .navigation__link:first-child {
-    padding-top: 2rem; }
+    margin-top: 2rem; }
+  .navigation__link::before {
+    content: "";
+    position: absolute;
+    width: 0.5rem;
+    height: 100%;
+    border-radius: 0 2rem 2rem 0;
+    background: var(--color-Primary);
+    transform: scaleY(0);
+    transition: transform 0.3s, width cubic-bezier(0, 0, 0, 1) 0.4s 0.3s;
+    z-index: -1; }
+  .navigation__link:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+    border-radius: 0; }
+  .navigation__link__active {
+    background: var(--color-Primary); }
   .navigation__link__icon {
     width: 2.25rem;
     height: 2.25rem;
